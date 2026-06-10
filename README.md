@@ -60,7 +60,7 @@ research/
 ├── tests/                     # 캐싱/변환 회귀 테스트
 ├── videos/                    # 로컬 입력 비디오 (.y4m, Git 미추적)
 ├── outputs/                   # 실행 중 생성되는 결과물 (Git 미추적)
-├── outputspaper_full/         # 논문에 사용한 최종 CSV/PNG 결과
+├── results/full_experiment/   # 전체 실험의 CSV/PNG 결과
 ├── LICENSE
 └── REPRODUCIBILITY.md         # 재현 가이드 (⭐ 필독)
 ```
@@ -117,7 +117,7 @@ uv run dtcwt-noise \
   -v akiyo foreman mobile stefan \
   --sigma 0 5 10 15 \
   -b 100 200 300 400 500 \
-  -o outputspaper_full \
+  -o results/full_experiment \
   --chunk_size 16 \
   --reuse_preprocessed \
   --cleanup_intermediates
@@ -205,7 +205,7 @@ pre-x264 ablation에서는 `Noisy`, `Gaussian-only`, `3D DWT-only`, `hqdn3d-only
 > BD-Rate < 0: Proposed가 동일 품질에서 더 적은 비트레이트 사용 (= 개선)
 > BD-Rate가 `nan`인 조건도 `mean_delta_*`, `low_bitrate_delta_*`, `win_rate_*`로 해석합니다.
 > VMAF는 학습 기반 지표의 콘텐츠/모델 의존성을 고려해 supplementary로만 기록하고, 결론은 위 신뢰 지표 조합을 우선합니다.
-> 표의 값은 `outputspaper_full/summary_bd_rates.csv`에서 Proposed의 영상별 평균을 계산한 결과입니다.
+> 표의 값은 `results/full_experiment/summary_bd_rates.csv`에서 Proposed의 영상별 평균을 계산한 결과입니다.
 
 ---
 

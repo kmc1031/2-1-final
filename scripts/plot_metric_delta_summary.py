@@ -19,8 +19,8 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT = ROOT / "outputspaper_full" / "summary_bd_rates.csv"
-OUTPUT = ROOT / "outputspaper_full" / "cross_condition_metric_deltas.png"
+INPUT = ROOT / "results" / "full_experiment" / "summary_bd_rates.csv"
+OUTPUT = ROOT / "results" / "full_experiment" / "cross_condition_metric_deltas.png"
 
 
 def _float(value: str) -> float:

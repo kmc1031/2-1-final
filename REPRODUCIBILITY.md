@@ -169,7 +169,7 @@ uv run dtcwt-noise \
     -v akiyo foreman mobile stefan \
     --sigma 0 5 10 15 \
     -b 100 200 300 400 500 \
-    -o outputspaper_full \
+    -o results/full_experiment \
     --chunk_size 16 \
     --reuse_preprocessed \
     --cleanup_intermediates

@@ -193,7 +193,7 @@ stdout.log
 profile_results.txt
 residual*.png
 
-# LaTeX build artifacts (keep source and selected final PDFs tracked)
+# LaTeX build artifacts
 *.aux
 *.bbl
 *.blg
@@ -204,7 +204,6 @@ residual*.png
 *.out
 *.synctex.gz
 *.toc
-paper/*_candidate.pdf
 
 # data/sample 안의 합성 비디오는 git으로 추적 (CI용)
 !data/sample/*.y4m
